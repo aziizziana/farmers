@@ -1,7 +1,10 @@
 from django.urls import path
 
 from . import views
+from accounts.api import FarmerApi
+
 
 urlpatterns = [
-    path('', views.index, name='index'),
+        path('farmers', FarmerApi.as_view())
+       
 ]

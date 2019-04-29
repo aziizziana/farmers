@@ -1,0 +1,41 @@
+<html>
+        <head>
+                <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+                <link rel = "stylesheet"
+                   href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+                <link rel = "stylesheet"
+                   href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+                <script type = "text/javascript"
+                   src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+                <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+                </script> 
+             </head>
+
+             <div id="nav">
+               <div class="navbar-fixed">
+                   <nav class="orange">
+                       <div class="nav-wrapper container">
+                           <a href="#!" class="brand-logo">&nbsp;JICA PRIDE</a>
+                           
+                       </div>
+                   </nav>
+               </div>
+           </div>
+    <body>
+            <ul id="slide-out" class="sidenav">
+                <li><a href="{% url 'officers'%}">Officers</a></li>
+                <li><a href="{% url 'farmers'%}">Farmers</a></li>
+                <li><a href="{% url 'reports'%}">Reports</a></li>
+                <li><a href="{% url 'season'%}">Seasons</a></li>
+            </ul>
+
+
+            <a class="waves-effect waves-light btn">Export CSV</a>
+
+          
+
+            
+            
+    </body>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</html>
