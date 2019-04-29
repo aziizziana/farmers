@@ -7,6 +7,13 @@ class FarmerApi(ListAPIView, CreateAPIView):
     serializer_class = FarmerSerializer
     queryset = Farmer.objects.all()
 
+class FarmerDeleteApi(RetrieveUpdateDestroyAPIView):
+    serializer_class = FarmerSerializer
+    queryset = Farmer.objects.all()
+    permission_classes = [
+        permissions.AllowAny
+    ]
+
 class FarmerViewSet(viewsets.ModelViewSet):
     queryset = Farmer.objects.all()
     permission_classes = [
